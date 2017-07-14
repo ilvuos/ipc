@@ -87,6 +87,18 @@
     <ClInclude Include="FileFrame.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ConfigBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SUserConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xml\tinystr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xml\tinyxml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="server.cpp">
@@ -150,6 +162,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="FileFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SUserConfig.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

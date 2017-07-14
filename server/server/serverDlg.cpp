@@ -6,6 +6,7 @@
 #include "server.h"
 #include "serverDlg.h"
 #include "afxdialogex.h"
+#include "SUserConfig.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -67,6 +68,7 @@ BEGIN_MESSAGE_MAP(CserverDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON1, &CserverDlg::OnBnClickedButton1)
 	ON_BN_CLICKED(IDC_BUTTON2, &CserverDlg::OnBnClickedButton2)
 	ON_BN_CLICKED(IDC_BUTTON3, &CserverDlg::OnBnClickedButton3)
+	ON_BN_CLICKED(IDC_BUTTON4, &CserverDlg::OnBnClickedButton4)
 END_MESSAGE_MAP()
 
 
@@ -231,4 +233,23 @@ void CserverDlg::OnBnClickedButton3()
 		i++;
 	}
 	sprintf_s(outBuf, "%04d/%02d/%02d %02d:%02d:%02d N:%f E:%f %f km/h x:+0.000 y:+0.000 z:+0.000", year+2000, mon,day, hour,min,second,N,E,su);
+}
+
+
+void CserverDlg::OnBnClickedButton4()
+{
+	/*
+	int   fd, size;   
+	char  buffer[1024];  
+	fd = open("/tmp/temp", O_WRONLY | O_CREAT); 
+	read(fd, buffer,1024);
+	close(fd);  
+	fd = open("/tmp/temp", O_RDONLY);
+	size = read(fd, buffer, sizeof(buffer));    
+	close(fd);  
+	TRACE("%s", buffer);
+	*/
+	CSUserConfig test;
+	test.Open("D:\\kevin\\server\\server\\Debug\\user_config.xml",NULL);
+	test.Remove(0x13);
 }
