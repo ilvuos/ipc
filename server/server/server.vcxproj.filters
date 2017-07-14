@@ -99,6 +99,18 @@
     <ClInclude Include="include\xml\tinyxml.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SettingFun.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TableBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="server.cpp">
@@ -168,6 +180,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="SUserConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingFun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TableBase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

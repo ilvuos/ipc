@@ -2,6 +2,7 @@
 #include "tinyxml.h"
 #include "ConfigBase.h"
 #include "ObjectBase.h"
+#include "ListObject.h"
 
 class CSUserConfig :
 	public CConfigBase
@@ -19,6 +20,6 @@ protected:
 public:
 	int Writer(char *name,int id);
 	int Remove(int id);
-	int Open(char *filepath,CObjectBase* list);
+	int Init(char *filepath, CListObject* list);
 };
 

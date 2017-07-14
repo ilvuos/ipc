@@ -60,7 +60,7 @@ int CSUserConfig::Remove(int id)
 	return 0;
 }
 
-int CSUserConfig::Open(char *filepath, CObjectBase* list)
+int CSUserConfig::Init(char *filepath, CListObject* list)
 {
 	const char    *pBuffer = NULL;
 

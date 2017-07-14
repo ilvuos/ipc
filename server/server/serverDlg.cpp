@@ -250,6 +250,6 @@ void CserverDlg::OnBnClickedButton4()
 	TRACE("%s", buffer);
 	*/
 	CSUserConfig test;
-	test.Open("D:\\kevin\\server\\server\\Debug\\user_config.xml",NULL);
+	test.Init("D:\\kevin\\server\\server\\Debug\\user_config.xml",NULL);
 	test.Remove(0x13);
 }
