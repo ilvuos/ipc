@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<user>
+		<add name="root"  id="1"  passwd="111111" 
+		     permissions = "0" sex="0" phone="+8618680664260"  
+		     email="ilvuos@126.com" icon=""
+		     server="www.iot-p2p.com|www.ilvuos.com"  reserved=""/>
+		     
+		<add name="admin"  id="15" passwd="111111" 
+		     permissions = "0" sex="0" phone="" email="" icon=""
+		     server=""  reserved=""/>	
+ 
+		<add name="user"  id="16" passwd="111111" 
+		     permissions = "0" sex="0" phone=""  
+		     email="" icon="" server=""  reserved="" >	
+		    
+	</user>
+</configuration>

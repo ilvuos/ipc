@@ -16,10 +16,12 @@ CSUserConfig::~CSUserConfig()
 int CSUserConfig::Writer(char *name, int id)
 {
 	int nID;
+	char passwd[]="123456";
 	TiXmlElement attendee("add");
 	attendee.SetAttribute(USER_XML_NAME, name);
 	attendee.SetAttribute(USER_XML_ID, id);
-
+	attendee.SetAttribute(USER_XML_PASSWD, passwd);
+	
 	assert(mpTiXmlnode);
 	mpTiXmlitemElement = mpTiXmlnode->ToElement();
 	assert(mpTiXmlitemElement);
@@ -85,6 +87,9 @@ int CSUserConfig::Init(char *filepath, CListObject* list)
 	mpTiXmlitemElement = mpTiXmlnode->ToElement();
 	assert(mpTiXmlitemElement);
 
+    if(!list)
+		return -1;
+	
 	while (mpTiXmlitemElement){
 		pBuffer = mpTiXmlitemElement->Attribute(USER_XML_NAME);
 		pBuffer = mpTiXmlitemElement->Attribute(USER_XML_ID);

@@ -9,7 +9,9 @@ class CSUserConfig :
 {
 public:
 	const char *USER_XML_NAME = "name";
-	const char *USER_XML_ID = "ID";
+	const char *USER_XML_ID = "id";
+	const char *USER_XML_PASSWD = "passwd";
+	
 	CSUserConfig();
 	~CSUserConfig();
 protected:
